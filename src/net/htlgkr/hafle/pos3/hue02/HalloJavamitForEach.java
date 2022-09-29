@@ -5,9 +5,10 @@ import java.util.List;
 
 public class HalloJavamitForEach {
     private List<String> list = new ArrayList<>();
-    public static void main(String[] args) {
+    public void main(String[] args) {
         HalloJavamitForEach halloJavamitForEach = new HalloJavamitForEach();
         halloJavamitForEach.oldForEach();
+        list.forEach(System.out::println);
     }
     private void oldForEach(){
         list.add("first");
