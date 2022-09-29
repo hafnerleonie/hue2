@@ -1,5 +1,9 @@
 package net.htlgkr.hafle.pos3.hue02;
 
+        import java.io.File;
+        import java.util.ArrayList;
+        import java.util.List;
+
 public class NumberTester {
     NumberTest oddTester = number -> number % 2 == 0;
     NumberTest primeTester = number -> number == 2 || number % 2 == 1;
@@ -13,6 +17,7 @@ public class NumberTester {
         return number == temp;
     };
     String fileName;
+    List<String> data = new ArrayList<>();
 
     public NumberTester ( String fileName ) {
         this.fileName = fileName;
@@ -29,6 +34,7 @@ public class NumberTester {
         this.palindromeTester = palindromeTester ;
     }
     public void testFile ( ) {
-        // TODO
+        File f = new File(fileName);
+
     }
 }
